@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><% title %></title>
+  <meta charset="utf8">
+</head>
+<body>
+  <br><br>
+  <div align="center">
+    <form action="/table" method="POST">
+      <input type="text" size="50px" name="address" placeholder="Введите адресс" autocomplete="off">
+      <button type="submit">Найти</button>
+    </form>
+  </div>
+  <div><% content %></div>
+</body>
+</html>

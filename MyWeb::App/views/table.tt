@@ -1,0 +1,13 @@
+<br><br>
+<b><% warning %></b>
+<br><br>
+<table border="1" color="blue">
+    <tr>
+        <th>№</th>
+        <th>Дата</th>
+        <th>Лог</th>
+    </tr>
+    <% FOREACH variable IN list %>
+        <% variable %>
+    <% END %>
+</table>
