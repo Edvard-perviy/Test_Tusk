@@ -6,7 +6,7 @@ use constant LIMIT => 100;
 # данные для подключение к базе mysql
 	my $db = 'LOGS';
 	my $user = 'eduard';
-	my $password = 'lefhlHELPBR';
+	my $password = '';
 
 my $dbh = DBI->connect("DBI:mysql:$db", $user, $password) or return "Error DBI connect: $!";
 
