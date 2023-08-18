@@ -14,7 +14,7 @@ use DBI;
 # данные для подключение к базе mysql
 my $db = 'LOGS';
 my $user = 'eduard';
-my $password = 'lefhlHELPBR';
+my $password = '';
 # путь к директории, где лежат файлы с логами
 my $my_dir_tmp = './tmp_logs/';
 
