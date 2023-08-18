@@ -43,16 +43,17 @@ for my $file (@dir) {
         my ($date, $int_id, $info) = ($1, $2, $3);
 
         if ($info =~ /^<=\s(.*)$/) {
-            # уходят в message
+            # в message
             $sth_m->execute($date, $log_id, $int_id, $1);
         } elsif ($info =~ /^[<>=\-\*]+\s(.*?@\S+)\s(.*)$/) {
-            # уходит в log с адресом получателя
+            # в log с адресом получателя
             $sth_l->execute($date, $int_id, $1, $2);
         } else {
             $info =~ s/^[<>=\-\*]+//;
-            # уходит в log без адреса
+            # в log без адреса
             $sth_l->execute($date, $int_id, '', $info);
         }
     }
+
     close($fh);
 }
