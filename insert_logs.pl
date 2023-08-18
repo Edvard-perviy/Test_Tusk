@@ -54,5 +54,5 @@ for my $file (@dir) {
             $sth_l->execute($date, $int_id, '', $info);
         }
     }
-    close $fh;
+    close($fh);
 }
